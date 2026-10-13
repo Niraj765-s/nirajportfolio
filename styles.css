@@ -1899,10 +1899,11 @@ button, input, textarea {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  padding: 2.25rem;
+  padding: 1.75rem;
   display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: stretch;
   transition: all var(--transition-smooth);
 }
 
@@ -1910,6 +1911,62 @@ button, input, textarea {
   transform: translateY(-5px);
   border-color: rgba(0, 212, 255, 0.35);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.cert-media-preview {
+  position: relative;
+  width: 100%;
+  height: 195px;
+  background: rgba(10, 15, 30, 0.6);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cert-media-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform var(--transition-smooth);
+}
+
+.cert-media-preview:hover img {
+  transform: scale(1.03);
+}
+
+.cert-media-preview .img-zoom-hint {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(10, 15, 30, 0.85);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 212, 255, 0.4);
+  color: var(--cyan-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  opacity: 0.85;
+  transition: all var(--transition-fast);
+}
+
+.cert-media-preview:hover .img-zoom-hint {
+  opacity: 1;
+  background: var(--cyan-primary);
+  color: #050b14;
+  transform: scale(1.1);
+}
+
+.cert-header-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .cert-icon-box {
