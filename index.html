@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Niraj Niraula - Mechanical Design Engineer (M.Tech IIT Bombay) specializing in Robotics, Mechanism Design, FEA, and Multi-Body Dynamics.">
+  <meta name="keywords" content="Niraj Niraula, Mechanical Engineer, IIT Bombay, Robotics, SolidWorks, ANSYS, EV Charging, Mechanism Design, FEA">
+  <meta name="author" content="Niraj Niraula">
+  <title>Niraj Niraula | Mechanical Design & Robotics Engineer</title>
+
+  <!-- Google Fonts: Space Grotesk & Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <nav class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Niraj Niraula Home">
+        <span class="logo-symbol">&lt;NN /&gt;</span>
+        <div class="logo-text">
+          <span class="brand-name">NIRAJ NIRAULA</span>
+          <span class="brand-sub">IIT BOMBAY &bull; DESIGN ENG.</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#flagship" class="nav-link featured-link"><i class="fa-solid fa-bolt"></i> Flagship</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#certifications" class="nav-link">Credentials</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link nav-cta-btn">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         1. HERO SECTION
+         ========================================================= -->
+    <section id="hero" class="hero-section">
+      <!-- Dynamic Blueprint Grid Background -->
+      <div class="hero-grid-bg" aria-hidden="true">
+        <div class="grid-radial-glow"></div>
+        <div class="grid-scanline"></div>
+      </div>
+
+      <!-- Particle Canvas (Lightweight ambient particle network) -->
+      <canvas id="hero-particles" class="hero-particles-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-container">
+        <!-- Status Indicator Pill -->
+        <div class="hero-badge animate-fade-in">
+          <span class="status-dot"></span>
+          <span class="badge-text">Available for R&amp;D &amp; Mechanical Design Engineering Roles</span>
+        </div>
+
+        <!-- Name & Identity -->
+        <h1 class="hero-name animate-fade-in delay-1">
+          NIRAJ NIRAULA
+        </h1>
+
+        <!-- Typing Tagline -->
+        <div class="hero-tagline-wrapper animate-fade-in delay-2">
+          <span class="hero-tagline-prefix">&gt; </span>
+          <span class="hero-tagline" id="typing-text">Mechanical Design Engineer</span>
+          <span class="typing-cursor">|</span>
+        </div>
+
+        <!-- Subtitle & Institutional Affiliation -->
+        <p class="hero-subtitle animate-fade-in delay-3">
+          <i class="fa-solid fa-graduation-cap"></i> M.Tech Mechanical Engineering (Design Engineering) &bull; 
+          <span class="highlight-text">Indian Institute of Technology Bombay</span>
+        </p>
+
+        <!-- Quick Spec Highlights -->
+        <div class="hero-metrics animate-fade-in delay-4">
+          <div class="metric-chip">
+            <i class="fa-solid fa-microchip"></i>
+            <span>Robotics &amp; Mechanism Design</span>
+          </div>
+          <div class="metric-chip">
+            <i class="fa-solid fa-certificate"></i>
+            <span>CSWA Certified &bull; Dassault</span>
+          </div>
+          <div class="metric-chip">
+            <i class="fa-solid fa-crosshairs"></i>
+            <span>Sub-Millimeter EV Charging Precision</span>
+          </div>
+          <div class="metric-chip">
+            <i class="fa-solid fa-satellite-dish"></i>
+            <span>Qualisys Motion Capture</span>
+          </div>
+        </div>
+
+        <!-- CTA Action Buttons -->
+        <div class="hero-cta-group animate-fade-in delay-5">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="assets/Niraj_Niraula_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <span>Resume PDF</span>
+            <i class="fa-solid fa-file-arrow-down"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Me</span>
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+          <a href="mailto:nirajniraula765@gmail.com" class="btn btn-ghost" title="Direct Email">
+            <i class="fa-solid fa-paper-plane"></i>
+          </a>
+        </div>
+
+        <!-- Social Connection Links -->
+        <div class="hero-socials animate-fade-in delay-6">
+          <span class="social-label">Connect:</span>
+          <a href="https://linkedin.com/in/niraj-niraula-IITB" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:nirajniraula765@gmail.com" class="social-icon" aria-label="Send Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+          <a href="tel:+9779825307023" class="social-icon" aria-label="Phone Number">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <span class="location-badge">
+            <i class="fa-solid fa-location-dot"></i> Letang, Morang, Nepal / IIT Bombay, Mumbai
+          </span>
+        </div>
+      </div>
+
+      <!-- Scroll Down Cue -->
+      <a href="#about" class="scroll-down-cue" aria-label="Scroll to About section">
+        <span class="cue-text">SCROLL</span>
+        <i class="fa-solid fa-angles-down cue-icon"></i>
+      </a>
+    </section>
+
+    <!-- =========================================================
+         2. ABOUT / PROFESSIONAL SUMMARY
+         ========================================================= -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">// 01. PROFILE</span>
+          <h2 class="section-title">About &amp; Professional Summary</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Narrative Card -->
+          <div class="about-card" data-reveal="left">
+            <div class="card-glow"></div>
+            <div class="about-badge-row">
+              <span class="institution-pill">
+                <i class="fa-solid fa-building-columns"></i> IIT Bombay &bull; Design Engineering
+              </span>
+              <span class="institution-pill">
+                <i class="fa-solid fa-car"></i> Automobile Engg. Background
+              </span>
+            </div>
+
+            <h3 class="about-headline">Engineering Autonomous Mechanisms with Computational &amp; Physical Rigor</h3>
+
+            <p class="about-text">
+              Mechanical design engineer (M.Tech, IIT Bombay) specializing in robotics and mechanism design, with hands-on experience developing a tendon-driven robotic manipulator for autonomous EV charging — spanning kinematic design, multi-body dynamic simulation (ADAMS), experimental motion-capture validation (Qualisys), and neural-network-based kinematic modeling (PyTorch). Proficient in SolidWorks, ANSYS, and AutoForm across the full design-to-manufacturing workflow, with an undergraduate specialization in Automobile Engineering.
+            </p>
+
+            <div class="about-philosophy">
+              <div class="philosophy-item">
+                <div class="ph-icon"><i class="fa-solid fa-bezier-curve"></i></div>
+                <div>
+                  <strong>Kinematic &amp; Dynamic Synthesis</strong>
+                  <p>Translating theoretical degrees of freedom into real-world, high-dexterity robotic links.</p>
+                </div>
+              </div>
+              <div class="philosophy-item">
+                <div class="ph-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div>
+                  <strong>Data-Driven Physical Validation</strong>
+                  <p>Closing the simulation-to-reality gap using sub-millimeter optical motion capture and ML modeling.</p>
+                </div>
+              </div>
+              <div class="philosophy-item">
+                <div class="ph-icon"><i class="fa-solid fa-industry"></i></div>
+                <div>
+                  <strong>Design for Manufacturing &amp; Assembly (DFMA)</strong>
+                  <p>From MasterCam tooling and AutoForm stamping to precision inspection and GD&amp;T.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Stats & Areas of Interest -->
+          <div class="about-aside" data-reveal="right">
+            <!-- Key Highlight Metric Cards -->
+            <div class="metrics-grid">
+              <div class="metric-box">
+                <div class="metric-num"><span class="counter" data-target="10000">10,000</span>+</div>
+                <div class="metric-title">Experimental Mocap Points</div>
+                <div class="metric-desc">Qualisys 3D Optical Rig</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-num"><span class="counter" data-target="218">218.6</span>%</div>
+                <div class="metric-title">Stiffness-to-Weight Boost</div>
+                <div class="metric-desc">Honeycomb-Core FEA</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-num"><span class="counter" data-target="0.05">0.05</span>%</div>
+                <div class="metric-title">Hertzian FEA Error Margin</div>
+                <div class="metric-desc">High-Precision Convergence</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-num"><span class="counter" data-target="72">72.3</span>%</div>
+                <div class="metric-title">Peak Turbine Efficiency</div>
+                <div class="metric-desc">CFD Optimized Cross-Flow</div>
+              </div>
+            </div>
+
+            <!-- Areas of Interest Badges -->
+            <div class="interests-card">
+              <h4 class="interests-title">
+                <i class="fa-solid fa-compass-drafting"></i> Areas of Interest &amp; Expertise
+              </h4>
+              <p class="interests-subtitle">Core functional domains applied across research and industrial design:</p>
+              
+              <div class="pill-cloud">
+                <span class="pill-tag"><i class="fa-solid fa-cube"></i> Product Design &amp; Development</span>
+                <span class="pill-tag"><i class="fa-solid fa-flask"></i> R&amp;D</span>
+                <span class="pill-tag"><i class="fa-solid fa-shapes"></i> FEA (Structural &amp; CFD)</span>
+                <span class="pill-tag"><i class="fa-solid fa-arrows-split-up-and-left"></i> Mechanism Synthesis &amp; Simulation</span>
+                <span class="pill-tag"><i class="fa-solid fa-robot"></i> Robotics &amp; Multi-Body Dynamics</span>
+                <span class="pill-tag"><i class="fa-solid fa-ruler-combined"></i> GD&amp;T</span>
+                <span class="pill-tag"><i class="fa-solid fa-gears"></i> DFMA</span>
+                <span class="pill-tag"><i class="fa-solid fa-triangle-exclamation"></i> FMEA</span>
+                <span class="pill-tag highlight-pill"><i class="fa-solid fa-brain"></i> AI &amp; ML for Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. TECHNICAL SKILLS
+         ========================================================= -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">// 02. COMPETENCIES</span>
+          <h2 class="section-title">Technical Skills &amp; Toolset</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">Comprehensive engineering software, computational frameworks, and physical prototyping technologies.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: Programming & ML -->
+          <div class="skill-card" data-reveal="up">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper cyan">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div>
+                <h3 class="skill-group-title">Programming &amp; Computational</h3>
+                <span class="skill-group-sub">Algorithm &amp; Neural Modeling</span>
+              </div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="skill-level">Advanced (PyTorch, NumPy, SciPy)</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-square-root-variable"></i> MATLAB</span>
+                  <span class="skill-level">Kinematic &amp; Numerical Solvers</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-terminal"></i> GNU Octave</span>
+                  <span class="skill-level">Mathematical Computing</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 82%;"></div></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">Data Pipelines</span>
+              <span class="skill-tag">Kinematic Solvers</span>
+              <span class="skill-tag">Numerical Optimization</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: CAD & Mechanical Design -->
+          <div class="skill-card featured-skill" data-reveal="up">
+            <div class="featured-badge-ribbon">CSWA CERTIFIED</div>
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper blue">
+                <i class="fa-solid fa-pen-ruler"></i>
+              </div>
+              <div>
+                <h3 class="skill-group-title">CAD &amp; Mechanical Design</h3>
+                <span class="skill-group-sub">3D Solid Modeling &amp; Tooling</span>
+              </div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-cube"></i> SolidWorks (CSWA)</span>
+                  <span class="skill-level">Expert (Complex Assemblies &amp; Surfaces)</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-layer-group"></i> Autodesk Fusion 360</span>
+                  <span class="skill-level">Parametric CAD &amp; Generative</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-compass-drafting"></i> Autodesk Inventor</span>
+                  <span class="skill-level">Mechanical Part &amp; Sheet Metal</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 82%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-gears"></i> MasterCam</span>
+                  <span class="skill-level">Die &amp; Punch Tooling Generation</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Sheet Metal</span>
+              <span class="skill-tag">Die &amp; Punch</span>
+              <span class="skill-tag">GD&amp;T Drawings</span>
+              <span class="skill-tag">Surface Modeling</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Simulation & FEA -->
+          <div class="skill-card" data-reveal="up">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper purple">
+                <i class="fa-solid fa-atom"></i>
+              </div>
+              <div>
+                <h3 class="skill-group-title">Simulation &amp; FEA / CAE</h3>
+                <span class="skill-group-sub">Multi-Body &amp; Continuum Physics</span>
+              </div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-shapes"></i> ANSYS Structural &amp; CFD</span>
+                  <span class="skill-level">Nonlinear, Contact, Fluent</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-arrows-spin"></i> MSC ADAMS</span>
+                  <span class="skill-level">Multi-Body Kinematic &amp; Dynamic</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-compress"></i> AutoForm</span>
+                  <span class="skill-level">Sheet Metal Stamping &amp; Forming</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 84%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-diagram-project"></i> Simulink</span>
+                  <span class="skill-level">System Dynamic Modeling</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Hertzian Contact</span>
+              <span class="skill-tag">Mesh Convergence</span>
+              <span class="skill-tag">Topology Optimization</span>
+              <span class="skill-tag">Multiphase CFD</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Robotics & Controls -->
+          <div class="skill-card" data-reveal="up">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper emerald">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div>
+                <h3 class="skill-group-title">Robotics &amp; Controls</h3>
+                <span class="skill-group-sub">Mechanism Synthesis &amp; Validation</span>
+              </div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-link"></i> Tendon-Driven Actuation</span>
+                  <span class="skill-level">Coupled Cable Mechanisms</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-route"></i> Forward / Inverse Kinematics</span>
+                  <span class="skill-level">Quaternion &amp; Dual-Joint Solvers</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-brain"></i> Neural Network Kinematics</span>
+                  <span class="skill-level">PyTorch Empirical Modeling</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 86%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-camera"></i> Qualisys Motion Capture</span>
+                  <span class="skill-level">3D Optical Marker Tracking Rig</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">U-Joint &amp; Spherical</span>
+              <span class="skill-tag">Workspace Analysis</span>
+              <span class="skill-tag">6-DOF Mocap</span>
+              <span class="skill-tag">Hysteresis Compensation</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 5: Documentation & Standards -->
+          <div class="skill-card" data-reveal="up">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper amber">
+                <i class="fa-solid fa-file-contract"></i>
+              </div>
+              <div>
+                <h3 class="skill-group-title">Documentation &amp; Standards</h3>
+                <span class="skill-group-sub">Engineering Rigor &amp; Quality</span>
+              </div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-ruler-combined"></i> GD&amp;T (ASME Y14.5)</span>
+                  <span class="skill-level">Tolerance Stack-Up &amp; Fitment</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-industry"></i> DFMA &amp; FMEA</span>
+                  <span class="skill-level">Failure Mode &amp; Assembly Optimization</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-square-root-variable"></i> LaTeX</span>
+                  <span class="skill-level">Academic &amp; Technical Reporting</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 86%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name"><i class="fa-solid fa-file-excel"></i> MS Office Suite</span>
+                  <span class="skill-level">Excel Modeling &amp; Presentation</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Technical Reports</span>
+              <span class="skill-tag">Tolerance Stack</span>
+              <span class="skill-tag">Makerspace Protocols</span>
+              <span class="skill-tag">Thesis Documentation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. FLAGSHIP PROJECT (FEATURED SEPARATELY)
+         ========================================================= -->
+    <section id="flagship" class="section flagship-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag highlight">// 03. MASTER'S THESIS SPOTLIGHT</span>
+          <h2 class="section-title">Robotic Solution for Autonomous EV Charging</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="flagship-master-card" data-reveal="zoom">
+          <div class="flagship-ambient-light"></div>
+          
+          <!-- Banner Header -->
+          <div class="flagship-banner-header">
+            <div class="flagship-meta-left">
+              <span class="flagship-label"><i class="fa-solid fa-star"></i> M.TECH THESIS FLAGSHIP</span>
+              <h3 class="flagship-project-name">Autonomous EV Charging Robotic Manipulator</h3>
+              <p class="flagship-institution">
+                <i class="fa-solid fa-building-columns"></i> Robotics Laboratory, IIT Bombay &bull; 
+                <span class="guide-tag">Guide: Prof. Anirban Guha</span> &bull; 
+                <span class="timeline-tag"><i class="fa-regular fa-calendar"></i> May 2025 &ndash; Jun 2026</span>
+              </p>
+            </div>
+            <div class="flagship-badge-icon">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+          </div>
+
+          <!-- Flagship Highlights Grid -->
+          <div class="flagship-content-grid">
+            <div class="flagship-overview-col">
+              <h4 class="col-title"><i class="fa-solid fa-microchip"></i> System Architecture &amp; Methodology</h4>
+              <p class="flagship-summary">
+                Autonomous electric vehicle (EV) charging demands reliable, sub-millimeter plug-to-receptacle alignment in the presence of vehicle positioning uncertainties, suspension deflection, and varying approach angles. This thesis designs, simulates, and experimentally validates a compact, high-precision tendon-driven hybrid robotic manipulator.
+              </p>
+
+              <!-- Detailed Bullet Points from Prompt -->
+              <div class="flagship-key-points">
+                <div class="point-box">
+                  <div class="point-icon"><i class="fa-solid fa-bezier-curve"></i></div>
+                  <div class="point-body">
+                    <strong>Quaternion-Inspired Hybrid Manipulator</strong>
+                    <p>Designed a novel hybrid robotic manipulator with dual-motor tendon-driven actuation tailored for autonomous EV charging-plug alignment, achieving sub-millimeter positional accuracy under load.</p>
+                  </div>
+                </div>
+
+                <div class="point-box">
+                  <div class="point-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+                  <div class="point-body">
+                    <strong>Dual Kinematic Configuration Comparison</strong>
+                    <p>Architected and compared two manipulator configurations (universal-joint and spherical-joint variants) through systematic workspace boundary analysis and dexterity metric evaluation.</p>
+                  </div>
+                </div>
+
+                <div class="point-box">
+                  <div class="point-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+                  <div class="point-body">
+                    <strong>Custom 3D Motion-Tracking Optical Test Rig</strong>
+                    <p>Built a custom 3D motion-tracking test rig utilizing a multi-camera Qualisys optical motion capture system for sub-millimeter 6-DOF ground truth validation.</p>
+                  </div>
+                </div>
+
+                <div class="point-box">
+                  <div class="point-icon"><i class="fa-solid fa-brain"></i></div>
+                  <div class="point-body">
+                    <strong>Neural Network Kinematic Modeling (PyTorch)</strong>
+                    <p>Trained deep neural network models on 10,000+ experimental data points, effectively overcoming cable stretch and non-linear routing friction to achieve validation accuracy within &plusmn;1.5 mm RMSE.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flagship Data & Metric Dashboard Column -->
+            <div class="flagship-data-col">
+              <div class="metric-dashboard">
+                <h4 class="dash-title"><i class="fa-solid fa-chart-line"></i> Benchmark Performance Metrics</h4>
+
+                <div class="dash-metric-card">
+                  <div class="dm-value text-cyan">&lt; 1.0 mm</div>
+                  <div class="dm-label">Positional Docking Accuracy</div>
+                  <div class="dm-sub">Sub-millimeter alignment for heavy CCS2/NACS plug interface</div>
+                </div>
+
+                <div class="dash-metric-card">
+                  <div class="dm-value text-emerald">10,000+</div>
+                  <div class="dm-label">Empirical Calibration Points</div>
+                  <div class="dm-sub">Captured with sub-millimeter Qualisys optical markers</div>
+                </div>
+
+                <div class="dash-metric-card">
+                  <div class="dm-value text-purple">&plusmn;1.5 mm</div>
+                  <div class="dm-label">Neural Network RMSE Error</div>
+                  <div class="dm-sub">Kinematic prediction compensated for cable hysteresis</div>
+                </div>
+
+                <div class="dash-metric-card">
+                  <div class="dm-value text-amber">2 Kinematic Variants</div>
+                  <div class="dm-label">U-Joint vs. Spherical Joint</div>
+                  <div class="dm-sub">Comprehensive multi-body dynamic simulation in ADAMS</div>
+                </div>
+              </div>
+
+              <!-- Tech Stack Badges -->
+              <div class="flagship-tech-stack">
+                <span class="tech-pill">SolidWorks CAD</span>
+                <span class="tech-pill">MSC ADAMS Dynamics</span>
+                <span class="tech-pill">Qualisys 3D Mocap</span>
+                <span class="tech-pill">PyTorch &amp; Python</span>
+                <span class="tech-pill">Tendon-Driven Robotics</span>
+                <span class="tech-pill">Kinematic Synthesis</span>
+                <span class="tech-pill">Workspace Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flagship Visual Showcase & Report Links from Notion -->
+          <div class="flagship-visual-showcase">
+            <div class="flagship-visual-header">
+              <div>
+                <h4 class="col-title"><i class="fa-solid fa-chart-area"></i> Experimental Validation: True Physical vs. AI Predicted 6-DOF Kinematics</h4>
+                <p class="visual-caption-sub">PyTorch neural network predictions overlaid against 10,000+ Qualisys optical motion-capture data points across X, Y, Z coordinates and Roll, Pitch, Yaw orientations.</p>
+              </div>
+              <div class="flagship-action-links">
+                <a href="https://drive.google.com/file/d/1ny4VLkOcvPEwiD2Ho_RpURWbSQ09bX4j/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="project-action-btn primary">
+                  <i class="fa-solid fa-file-pdf"></i> View Thesis Report
+                </a>
+                <a href="https://drive.google.com/drive/folders/1_ASIovyT9_mAVPaFUWvwYvJBLeeDKwU9?usp=drive_link" target="_blank" rel="noopener noreferrer" class="project-action-btn">
+                  <i class="fa-brands fa-google-drive"></i> CAD &amp; Data Repository
+                </a>
+              </div>
+            </div>
+            <div class="flagship-image-frame lightbox-trigger" data-src="assets/ev_charging_cover.png" data-caption="M.Tech Thesis (IIT Bombay): True Physical vs. AI Predicted 6-DOF Kinematics (X, Y, Z, Roll, Pitch, Yaw)">
+              <img src="assets/ev_charging_cover.png" alt="True vs AI Predicted Kinematics Plot for Autonomous EV Charging Manipulator" loading="lazy">
+              <div class="image-zoom-badge"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Expand Full Resolution</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. PROJECTS (GRID OF PROJECT CARDS)
+         ========================================================= -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">// 04. PORTFOLIO</span>
+          <h2 class="section-title">Selected Engineering Projects</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">Showcasing engineering research, finite element analyses, multi-body simulations, CAD renders, and full technical reports extracted from Notion.</p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters" data-reveal>
+          <button class="filter-btn active" data-filter="all">All Projects (8)</button>
+          <button class="filter-btn" data-filter="cad">CAD &amp; Manufacturing</button>
+          <button class="filter-btn" data-filter="fea">FEA &amp; CFD Simulation</button>
+          <button class="filter-btn" data-filter="robotics">Robotics &amp; Mechanisms</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: FEA of Honeycomb-Core Cantilever Beam -->
+          <article class="project-card" data-category="fea" data-reveal="up">
+            <div class="project-media-wrapper">
+              <div class="project-main-img lightbox-trigger" data-src="assets/honeycomb_fea_cover.png" data-caption="FEA of Honeycomb-Core Structured Cantilever Beam — ANSYS 3D Tetrahedral Mesh & Structural Comparison (218.6% Stiffness-to-Weight Boost)">
+                <img src="assets/honeycomb_fea_cover.png" alt="ANSYS FEA Mesh of Honeycomb-Core Cantilever Beam" loading="lazy">
+                <span class="img-zoom-hint"><i class="fa-solid fa-expand"></i></span>
+              </div>
+            </div>
+            <div class="project-card-inner">
+              <div class="project-card-header">
+                <span class="project-institution"><i class="fa-solid fa-building-columns"></i> IIT Bombay</span>
+                <span class="project-date"><i class="fa-regular fa-calendar"></i> Apr 2025</span>
+              </div>
+              <div class="project-category-tag">FEA &amp; Structural</div>
+              <h3 class="project-title">FEA of Honeycomb-Core Cantilever Beam</h3>
+              <p class="project-description">
+                Performed structural FEA in ANSYS comparing solid and honeycomb-core cantilever beam geometries under equivalent load conditions, quantifying a 218.6% improvement in stiffness-to-weight ratio.
+              </p>
+              <div class="project-key-achievement">
+                <i class="fa-solid fa-circle-check"></i> High-fidelity sandwich panel modeling revealing core shear transfer and cell wall buckling thresholds.
+              </div>
+              <div class="project-tags">
+                <span class="tag">ANSYS</span>
+                <span class="tag">FEA</span>
+                <span class="tag">Structural Analysis</span>
+                <span class="tag">SolidWorks</span>
+              </div>
+              <div class="project-links-bar">
+                <a href="https://drive.google.com/file/d/1thOoKdWKyrCozCVAgAPMLS1LWTAHjiAM/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="project-action-btn primary">
+                  <i class="fa-solid fa-file-pdf"></i> Full FEA Report (Drive)
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Hertzian Contact Analysis Validation -->
+          <article class="project-card" data-category="fea" data-reveal="up">
+            <div class="project-media-wrapper">
+              <div class="project-main-img lightbox-trigger" data-src="assets/hertzian_1.png" data-caption="Hertzian Contact Analysis in ANSYS R16.2 — Equivalent (von-Mises) Stress Contour (Max: 83.541 MPa)">
+                <img src="assets/hertzian_1.png" alt="ANSYS Hertzian Contact Stress Contour" loading="lazy">
+                <span class="img-zoom-hint"><i class="fa-solid fa-expand"></i></span>
+              </div>
+              <div class="project-thumbs-bar" aria-label="Switch simulation view">
+                <button type="button" class="thumb-btn active" data-img="assets/hertzian_1.png" data-caption="Hertzian Contact Analysis — Equivalent (von-Mises) Stress Contour (Max: 83.541 MPa)">Von-Mises</button>
+                <button type="button" class="thumb-btn" data-img="assets/hertzian_3.png" data-caption="Hertzian Contact Analysis — Contact Pressure Distribution (Max: 152.87 MPa, 0.05% error vs analytical)">Contact Pressure</button>
+                <button type="button" class="thumb-btn" data-img="assets/hertzian_2.png" data-caption="Hertzian Contact Analysis — XY Shear Stress Distribution (Max: 28.007 MPa)">Shear Stress</button>
+                <button type="button" class="thumb-btn" data-img="assets/hertzian_4.png" data-caption="Hertzian Contact Analysis — 3D Axisymmetric Sphere-on-Sphere Contact Model">3D View</button>
+                <button type="button" class="thumb-btn" data-img="assets/hertzian_5.png" data-caption="Hertzian Contact Analysis — 2D Axisymmetric Geometry Simplification">2D Model</button>
+              </div>
+            </div>
+            <div class="project-card-inner">
+              <div class="project-card-header">
+                <span class="project-institution"><i class="fa-solid fa-building-columns"></i> IIT Bombay</span>
+                <span class="project-date"><i class="fa-regular fa-calendar"></i> Apr 2025</span>
+              </div>
+              <div class="project-category-tag">CAE &amp; Contact Mechanics</div>
+              <h3 class="project-title">Hertzian Contact Analysis Validation</h3>
+              <p class="project-description">
+                Simulated non-linear sphere-on-sphere elastic contact in ANSYS Workbench (152.87 MPa peak pressure), matching classical analytical Hertzian contact theory within 0.05% error.
+              </p>
+              <div class="project-key-achievement">
+                <i class="fa-solid fa-circle-check"></i> 2D axisymmetric simplification and localized contact mesh refinement reduced solve time while preserving sub-percent accuracy.
+              </div>
+              <div class="project-tags">
+                <span class="tag">ANSYS R16.2</span>
+                <span class="tag">Non-Linear Contact</span>
+                <span class="tag">Axisymmetric FEA</span>
+                <span class="tag">SolidWorks</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Six-Bar Toggle Mechanism Analysis -->
+          <article class="project-card" data-category="robotics" data-reveal="up">
+            <div class="project-media-wrapper">
+              <div class="project-main-img lightbox-trigger" data-src="assets/pdf_images/sixbar_img_1.jpg" data-caption="Six-Bar Toggle Mechanism — 3D SolidWorks Parametric CAD Assembly">
+                <img src="assets/pdf_images/sixbar_img_1.jpg" alt="Six-Bar Toggle Mechanism SolidWorks CAD" loading="lazy">
+                <span class="img-zoom-hint"><i class="fa-solid fa-expand"></i></span>
+              </div>
+              <div class="project-thumbs-bar" aria-label="Switch mechanism view">
+                <button type="button" class="thumb-btn active" data-img="assets/pdf_images/sixbar_img_1.jpg" data-caption="Six-Bar Toggle Mechanism — 3D SolidWorks Parametric CAD Assembly">3D CAD Render</button>
+                <button type="button" class="thumb-btn" data-img="assets/six_bar_toggle_cover.png" data-caption="Six-Bar Toggle Mechanism — MSC ADAMS 2024.1 Slider Velocity Profile">ADAMS Velocity</button>
+                <button type="button" class="thumb-btn" data-img="assets/pdf_images/sixbar2_img_1.jpg" data-caption="Six-Bar Toggle Mechanism — MSC ADAMS Joint Element Force Magnitude">Joint Force</button>
+              </div>
+            </div>
+            <div class="project-card-inner">
+              <div class="project-card-header">
+                <span class="project-institution"><i class="fa-solid fa-building-columns"></i> IIT Bombay</span>
+                <span class="project-date"><i class="fa-regular fa-calendar"></i> Apr 2025</span>
+              </div>
+              <div class="project-category-tag">Kinematics &amp; Multi-Body</div>
+              <h3 class="project-title">Six-Bar Toggle Mechanism Analysis</h3>
+              <p class="project-description">
+                Modeled a six-bar toggle mechanism in SolidWorks and executed full kinematic and dynamic simulations in MSC ADAMS 2024.1, achieving 95% agreement with analytical vector-loop calculations.
+              </p>
+              <div class="project-key-achievement">
+                <i class="fa-solid fa-circle-check"></i> Accurately characterized slider velocity, acceleration, and mechanical advantage multiplication near toggle dead-center.
+              </div>
+              <div class="project-tags">
+                <span class="tag">MSC ADAMS</span>
+                <span class="tag">Mechanism Synthesis</span>
+                <span class="tag">SolidWorks</span>
+              </div>
+              <div class="project-links-bar">
+                <a href="assets/Six_Bar_Toggle_Report_1.pdf" target="_blank" rel="noopener noreferrer" class="project-action-btn primary">
+                  <i class="fa-solid fa-file-pdf"></i> Kinematic Report (PDF)
+                </a>
+                <a href="assets/Six_Bar_Toggle_Report_2.pdf" target="_blank" rel="noopener noreferrer" class="project-action-btn">
+                  <i class="fa-solid fa-file-pdf"></i> Dynamic Report (PDF)
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Textile Mechanism Optimization -->
+          <article class="project-card" data-category="robotics" data-reveal="up">
+            <div class="project-media-wrapper">
+              <div class="project-main-img lightbox-trigger" data-src="assets/pdf_images/textile_img_1.jpg" data-caption="Kinematic & Dynamic Analysis of Textile Mechanisms — Industrial Ring-Spinning Doffing Linkage">
+                <img src="assets/pdf_images/textile_img_1.jpg" alt="Industrial Textile Doffing Linkage Mechanism" loading="lazy">
+                <span class="img-zoom-hint"><i class="fa-solid fa-expand"></i></span>
+              </div>
+              <div class="project-thumbs-bar" aria-label="Switch textile mechanism view">
+                <button type="button" class="thumb-btn active" data-img="assets/pdf_images/textile_img_1.jpg" data-caption="Industrial Ring-Spinning Doffing Linkage Mechanism">Doffing Linkage</button>
+                <button type="button" class="thumb-btn" data-img="assets/textile_mechanism_cover.png" data-caption="MSC ADAMS CM Acceleration Profile of Textile Linkage">ADAMS Acceleration</button>
+                <button type="button" class="thumb-btn" data-img="assets/pdf_images/textile2_img_2.jpg" data-caption="Analytical Velocity Polygon & Vector Diagram Verification">Velocity Polygon</button>
+              </div>
+            </div>
+            <div class="project-card-inner">
+              <div class="project-card-header">
+                <span class="project-institution"><i class="fa-solid fa-building-columns"></i> IIT Bombay</span>
+                <span class="project-date"><i class="fa-regular fa-calendar"></i> Mar 2025</span>
+              </div>
+              <div class="project-category-tag">Mechanism Optimization</div>
+              <h3 class="project-title">Textile Mechanism Optimization</h3>
+              <p class="project-description">
+                Modeled Doffing and Beat-up textile mechanisms in SolidWorks and ADAMS. Synthesized an alternate linkage topology achieving equivalent motion with 10&ndash;20% lower mass and 25&ndash;30% lower peak power.
+              </p>
+              <div class="project-key-achievement">
+                <i class="fa-solid fa-circle-check"></i> Counter-balanced link inertia to attenuate cyclic vibration loads transmitted to the high-speed weaving frame.
+              </div>
+              <div class="project-tags">
+                <span class="tag">MSC ADAMS</span>
+                <span class="tag">SolidWorks</span>
+                <span class="tag">Linkage Optimization</span>
+              </div>
+              <div class="project-links-bar">
+                <a href="assets/Textile_Mechanisms_Report_1.pdf" target="_blank" rel="noopener noreferrer" class="project-action-btn primary">
+                  <i class="fa-solid fa-file-pdf"></i> Report Part 1 (PDF)
+                </a>
+                <a href="assets/Textile_Mechanisms_Report_2.pdf" target="_blank" rel="noopener noreferrer" class="project-action-btn">
+                  <i class="fa-solid fa-file-pdf"></i> Report Part 2 (PDF)
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: NACA-6409 Cross-Flow Turbine -->
+          <article class="project-card" data-category="fea" data-reveal="up">
+            <div class="project-media-wrapper">
+              <div class="project-main-img lightbox-trigger" data-src="assets/naca_turbine_cover.png" data-caption="NACA-6409 Airfoil Cross-Flow Turbine — ANSYS CFX Velocity Streamlines & Torque Evaluation (72.3% Peak Efficiency)">
+                <img src="assets/naca_turbine_cover.png" alt="ANSYS CFX Velocity Contour of NACA-6409 Cross-Flow Turbine" loading="lazy">
+                <span class="img-zoom-hint"><i class="fa-solid fa-expand"></i></span>
+              </div>
+              <div class="project-thumbs-bar" aria-label="Switch turbine view">
+                <button type="button" class="thumb-btn active" data-img="assets/naca_turbine_cover.png" data-caption="ANSYS CFX Velocity Streamlines & Rotor Torque Output (72.3% Peak Efficiency)">CFX Velocity</button>
+                <button type="button" class="thumb-btn" data-img="assets/pdf_images/naca_all_img_5.jpg" data-caption="SolidWorks 2022 3D Parametric Rotor Assembly with 25 NACA-6409 Hydrofoil Blades">3D Rotor CAD</button>
+                <button type="button" class="thumb-btn" data-img="assets/pdf_images/naca_all_img_12.jpg" data-caption="ANSYS R16.2 High-Density Unstructured Tetrahedral CFD Rotor Mesh">CFD Mesh</button>
+              </div>
+            </div>
+            <div class="project-card-inner">
+              <div class="project-card-header">
+                <span class="project-institution"><i class="fa-solid fa-graduation-cap"></i> IOE Purwanchal</span>
+                <span class="project-date"><i class="fa-regular fa-calendar"></i> May 2022 - May 2023</span>
+              </div>
+              <div class="project-category-tag">CFD &amp; B.Tech Thesis</div>
+              <h3 class="project-title">NACA-6409 Cross-Flow Turbine</h3>
+              <p class="project-description">
+                Designed a Cross-Flow Turbine using NACA-6409 hydrofoil blades in SolidWorks, achieving 72.3% peak hydraulic efficiency (4% above baseline). ANSYS CFX simulations identified 29&deg; as the optimal chord angle.
+              </p>
+              <div class="project-key-achievement">
+                <i class="fa-solid fa-circle-check"></i> Parametric CFD sweep across nozzle entry arcs and blade angles to maximize runner torque extraction.
+              </div>
+              <div class="project-tags">
+                <span class="tag">ANSYS CFX</span>
+                <span class="tag">SolidWorks</span>
+                <span class="tag">Hydropower CFD</span>
+                <span class="tag">B.Tech Thesis</span>
+              </div>
+              <div class="project-links-bar">
+                <a href="assets/NACA_6409_BTech_Thesis.pdf" target="_blank" rel="noopener noreferrer" class="project-action-btn primary">
+                  <i class="fa-solid fa-file-pdf"></i> Full B.Tech Thesis (PDF)
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: DRUJ Biomechanical Measurement Jig -->
+          <article class="project-card" data-category="cad" data-reveal="up">
+            <div class="project-media-wrapper">
+              <div class="project-blueprint-banner">
+                <i class="fa-solid fa-Drafting-compass fa-compass-drafting"></i>
+                <span>SOLIDWORKS BIOMECHANICAL FIXTURE &bull; 90% REPEATABILITY</span>
+              </div>
+            </div>
+            <div class="project-card-inner">
+              <div class="project-card-header">
+                <span class="project-institution"><i class="fa-solid fa-building-columns"></i> IIT Bombay</span>
+                <span class="project-date"><i class="fa-regular fa-calendar"></i> Apr 2025</span>
+              </div>
+              <div class="project-category-tag">Precision &amp; Biomechanics</div>
+              <h3 class="project-title">DRUJ Biomechanical Measurement Jig</h3>
+              <p class="project-description">
+                Designed a custom mechanical jig in SolidWorks to standardize Distal Radioulnar Joint (DRUJ) range-of-motion and laxity testing, improving measurement repeatability by 90% across test cycles.
+              </p>
+              <div class="project-key-achievement">
+                <i class="fa-solid fa-circle-check"></i> Engineered anatomical forearm constraints with low-friction bearing pivots and calibrated angular readouts.
+              </div>
+              <div class="project-tags">
+                <span class="tag">SolidWorks</span>
+                <span class="tag">Biomechanics</span>
+                <span class="tag">Fixture Design</span>
+              </div>
+              <div class="project-links-bar">
+                <a href="https://drive.google.com/file/d/1kBxVewRuhns3cYiyvRFynswl613GLay4/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="project-action-btn primary">
+                  <i class="fa-solid fa-file-pdf"></i> View Project Report (Drive)
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7: Copper Vapor Chamber Thermal Plate -->
+          <article class="project-card" data-category="cad" data-reveal="up">
+            <div class="project-media-wrapper">
+              <div class="project-blueprint-banner">
+                <i class="fa-solid fa-industry"></i>
+                <span>AUTOFORM STAMPING &amp; MASTERCAM DIE/PUNCH TOOLING</span>
+              </div>
+            </div>
+            <div class="project-card-inner">
+              <div class="project-card-header">
+                <span class="project-institution"><i class="fa-solid fa-building-columns"></i> IIT Bombay</span>
+                <span class="project-date"><i class="fa-regular fa-calendar"></i> Apr 2026</span>
+              </div>
+              <div class="project-category-tag">CAD &amp; Manufacturing</div>
+              <h3 class="project-title">Copper Vapor Chamber Thermal Plate</h3>
+              <p class="project-description">
+                Designed a copper vapor chamber thermal plate for high-density electronic cooling in SolidWorks, developed die/punch tooling in MasterCam, and optimized sheet-metal formability in AutoForm.
+              </p>
+              <div class="project-key-achievement">
+                <i class="fa-solid fa-circle-check"></i> Iterative AutoForm sheet-metal forming simulations reduced predicted thinning and forming defects by 5%.
+              </div>
+              <div class="project-tags">
+                <span class="tag">SolidWorks</span>
+                <span class="tag">MasterCam</span>
+                <span class="tag">AutoForm</span>
+                <span class="tag">DFMA</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 8: Soft Flexible Robotic Manipulators -->
+          <article class="project-card" data-category="robotics" data-reveal="up">
+            <div class="project-media-wrapper">
+              <div class="project-blueprint-banner">
+                <i class="fa-solid fa-robot"></i>
+                <span>CONTINUUM ROBOTICS &amp; AUTONOMOUS EV DOCKING SEMINAR</span>
+              </div>
+            </div>
+            <div class="project-card-inner">
+              <div class="project-card-header">
+                <span class="project-institution"><i class="fa-solid fa-book-open"></i> M.Tech Seminar</span>
+                <span class="project-date"><i class="fa-regular fa-calendar"></i> Jan-Apr 2025</span>
+              </div>
+              <div class="project-category-tag">Soft Robotics &amp; Research</div>
+              <h3 class="project-title">Soft Flexible Robotic Manipulators</h3>
+              <p class="project-description">
+                Synthesized a literature review of 7 peer-reviewed papers covering design, actuation, sensing, and closed-loop control of soft continuum manipulators; proposed an original framework for autonomous EV charging.
+              </p>
+              <div class="project-key-achievement">
+                <i class="fa-solid fa-circle-check"></i> Established the kinematic and compliance trade-offs that directly informed the M.Tech hybrid manipulator thesis.
+              </div>
+              <div class="project-tags">
+                <span class="tag">Soft Robotics</span>
+                <span class="tag">Continuum Actuation</span>
+                <span class="tag">Closed-Loop Control</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. EXPERIENCE
+         ========================================================= -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">// 05. CAREER</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline">
+          
+          <!-- Experience 1: Teaching Assistant IIT Bombay -->
+          <div class="timeline-item" data-reveal="left">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-period"><i class="fa-regular fa-calendar"></i> Aug &ndash; Dec 2024</span>
+                <span class="timeline-role-badge">Academic Appointment</span>
+              </div>
+              <h3 class="timeline-title">Teaching Assistant &ndash; Makerspace Lab (MS101)</h3>
+              <h4 class="timeline-company"><i class="fa-solid fa-building-columns"></i> Indian Institute of Technology Bombay (IIT Bombay)</h4>
+              <p class="timeline-desc">
+                Instructed and mentored 120+ first-year undergraduate engineering students through hands-on mechanical fabrication, rapid prototyping, and CAD modeling. Supervised precision machining, 3D printing, laser cutting, and sheet-metal forming safety protocols while reinforcing engineering design reviews.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Makerspace Prototyping</span>
+                <span class="tag">CAD Instruction</span>
+                <span class="tag">Lab Safety Protocols</span>
+                <span class="tag">Mentorship</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2: Engineering Trainee NEA -->
+          <div class="timeline-item" data-reveal="right">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-period"><i class="fa-regular fa-calendar"></i> May &ndash; Jun 2023</span>
+                <span class="timeline-role-badge">Industrial Traineeship</span>
+              </div>
+              <h3 class="timeline-title">Engineering Trainee</h3>
+              <h4 class="timeline-company"><i class="fa-solid fa-water"></i> Puwakhola Hydropower Plant, Nepal Electricity Authority (NEA)</h4>
+              <p class="timeline-desc">
+                Inspected and analyzed operational parameters of high-head hydraulic turbines, hydro governors, penstock pressure control systems, and automated electrical switchyard machinery. Gained direct field exposure to preventative maintenance schedules, turbine runner erosion assessment, and power grid synchronization.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Hydraulic Turbines</span>
+                <span class="tag">Plant Maintenance</span>
+                <span class="tag">Grid Operations</span>
+                <span class="tag">Vibration Inspection</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3: Workshop Trainer -->
+          <div class="timeline-item" data-reveal="left">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-period"><i class="fa-regular fa-calendar"></i> Aug 2022</span>
+                <span class="timeline-role-badge">Technical Instruction</span>
+              </div>
+              <h3 class="timeline-title">Workshop Trainer &ndash; SolidWorks &amp; ANSYS</h3>
+              <h4 class="timeline-company"><i class="fa-solid fa-graduation-cap"></i> Diploma Training Program</h4>
+              <p class="timeline-desc">
+                Conducted intensive hands-on workshops on parametric 3D CAD modeling, assembly constraints, drafting conventions, and basic FEA static structural simulations for 45+ diploma mechanical engineering candidates.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">SolidWorks Training</span>
+                <span class="tag">ANSYS FEA Basics</span>
+                <span class="tag">Technical Drafting</span>
+                <span class="tag">Hands-on Workshops</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. EDUCATION
+         ========================================================= -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">// 06. ACADEMICS</span>
+          <h2 class="section-title">Education &amp; Academic Credentials</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="education-grid">
+          
+          <!-- Master's Degree Card -->
+          <div class="edu-card featured-edu" data-reveal="up">
+            <div class="edu-card-glow"></div>
+            <div class="edu-icon-badge">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div class="edu-degree-header">
+              <span class="edu-year"><i class="fa-regular fa-calendar"></i> 2024 &ndash; 2026</span>
+              <span class="edu-level-pill">Master of Technology (M.Tech)</span>
+            </div>
+            <h3 class="edu-institution">Indian Institute of Technology Bombay</h3>
+            <h4 class="edu-program">Mechanical Engineering &ndash; Design Engineering</h4>
+            <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Powai, Mumbai, Maharashtra, India</p>
+            <p class="edu-score"><i class="fa-solid fa-chart-line"></i> <strong>8.0 CPI / 80%</strong></p>
+            <div class="edu-details">
+              <p>Specialization focusing on advanced robotics, multi-body kinematics, finite element analysis, and computational mechanism synthesis.</p>
+              <div class="edu-course-tags">
+                <span class="course-pill">Robotics &amp; Multi-Body Dynamics</span>
+                <span class="course-pill">Advanced Mechanism Design</span>
+                <span class="course-pill">Finite Element Methods</span>
+                <span class="course-pill">Continuum Mechanics</span>
+                <span class="course-pill">M.Tech Thesis Lab</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bachelor's Degree Card -->
+          <div class="edu-card" data-reveal="up">
+            <div class="edu-icon-badge">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="edu-degree-header">
+              <span class="edu-year"><i class="fa-regular fa-calendar"></i> 2018 &ndash; 2023</span>
+              <span class="edu-level-pill">Bachelor of Technology (B.Tech)</span>
+            </div>
+            <h3 class="edu-institution">Tribhuvan University, Purwanchal Campus</h3>
+            <h4 class="edu-program">Mechanical Engineering &ndash; Automobile Engineering</h4>
+            <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Institute of Engineering (IOE), Dharan, Nepal</p>
+            <p class="edu-score"><i class="fa-solid fa-chart-line"></i> <strong>68.5%</strong></p>
+            <div class="edu-details">
+              <p>Undergraduate specialization in automotive powertrains, chassis dynamics, CFD hydrofoil analysis, and precision fabrication.</p>
+              <div class="edu-course-tags">
+                <span class="course-pill">Automobile Engineering</span>
+                <span class="course-pill">Fluid Mechanics &amp; CFD</span>
+                <span class="course-pill">Vehicle Dynamics</span>
+                <span class="course-pill">Machine Design</span>
+                <span class="course-pill">Capstone Hydro Turbine Thesis</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         8. CERTIFICATIONS & LICENSING
+         ========================================================= -->
+    <section id="certifications" class="section certifications-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">// 07. CREDENTIALS</span>
+          <h2 class="section-title">Certifications &amp; Professional Licensing</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="cert-grid">
+          
+          <!-- Certification 1: CSWA -->
+          <div class="cert-card" data-reveal="left">
+            <div class="cert-icon-box">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Dassault Syst&egrave;mes</span>
+              <h3 class="cert-title">Certified SOLIDWORKS Associate (CSWA)</h3>
+              <p class="cert-description">
+                Verified professional competence in 3D parametric mechanical design, complex part modeling, multi-component assembly constraints, engineering drawing generation, and mass property calculations under ASME drafting standards.
+              </p>
+              <div class="cert-meta">
+                <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Credential ID: C-DVFBZ3EU9N &bull; Sep 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 2: NEC Registered Engineer -->
+          <div class="cert-card" data-reveal="right">
+            <div class="cert-icon-box gold">
+              <i class="fa-solid fa-id-card-clip"></i>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Nepal Engineering Council (NEC)</span>
+              <h3 class="cert-title">Registered Mechanical Engineer</h3>
+              <p class="cert-description">
+                Successfully cleared the competitive National Professional Licensing Examination among 10,000+ national candidates (2023), granting full legal registration and statutory licensure to practice professional mechanical engineering.
+              </p>
+              <div class="cert-meta">
+                <span class="cert-status"><i class="fa-solid fa-award"></i> Reg. No: 81008 &bull; National Licensing Exam (10k+ Candidates)</span>
+              </div>
+              <div class="cert-actions">
+                <button type="button" class="project-action-btn primary lightbox-trigger" data-src="assets/nec_certificate.png" data-caption="Nepal Engineering Council — Registered Mechanical Engineer (Registration No: 81008)">
+                  <i class="fa-solid fa-image"></i> View Certificate
+                </button>
+                <a href="https://nec.gov.np/registration/81008?programName=Mechanical%20Engineering" target="_blank" rel="noopener noreferrer" class="project-action-btn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify on NEC Portal
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 3: SOLIDWORKS xDesign Associate (from Notion) -->
+          <div class="cert-card" data-reveal="left">
+            <div class="cert-icon-box">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Dassault Syst&egrave;mes / SOLIDWORKS</span>
+              <h3 class="cert-title">SOLIDWORKS xDesign Associate</h3>
+              <p class="cert-description">
+                Certified proficiency in browser-based 3D CAD design using the SOLIDWORKS xDesign platform for collaborative cloud-native mechanical design and product development.
+              </p>
+              <div class="cert-meta">
+                <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Credential ID: C-LK2YHZWJGN &bull; Sep 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 4: SOLIDWORKS Sustainability Associate (from Notion) -->
+          <div class="cert-card" data-reveal="right">
+            <div class="cert-icon-box green">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Dassault Syst&egrave;mes / SOLIDWORKS</span>
+              <h3 class="cert-title">SOLIDWORKS Sustainability Associate</h3>
+              <p class="cert-description">
+                Certified competence in environmental lifecycle assessment, sustainable material selection, and eco-design analysis for reducing carbon footprint and environmental impact of engineered products.
+              </p>
+              <div class="cert-meta">
+                <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Credential ID: C-EGC2YSRFHV &bull; Jul 2026</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         9. CONTACT & FOOTER
+         ========================================================= -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">// 08. GET IN TOUCH</span>
+          <h2 class="section-title">Contact &amp; Collaboration</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">Interested in collaborating on robotics, mechanism design, or engineering R&amp;D? Send a message or reach out directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Direct Information Column -->
+          <div class="contact-info-card" data-reveal="left">
+            <h3 class="contact-card-title"><i class="fa-solid fa-address-card"></i> Contact Information</h3>
+            <p class="contact-pitch">
+              Open to full-time Mechanical Design Engineer, Robotics R&amp;D Engineer, FEA Analyst, and Mechanism Synthesis opportunities globally.
+            </p>
+
+            <ul class="contact-details-list">
+              <li class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div>
+                  <span class="detail-label">Direct Email</span>
+                  <a href="mailto:nirajniraula765@gmail.com" class="detail-link">nirajniraula765@gmail.com</a>
+                </div>
+              </li>
+              <li class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="detail-label">Phone &amp; WhatsApp</span>
+                  <a href="tel:+9779825307023" class="detail-link">+977-9825307023</a>
+                </div>
+              </li>
+              <li class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div>
+                  <span class="detail-label">LinkedIn Profile</span>
+                  <a href="https://linkedin.com/in/niraj-niraula-IITB" target="_blank" rel="noopener noreferrer" class="detail-link">linkedin.com/in/niraj-niraula-IITB</a>
+                </div>
+              </li>
+              <li class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="detail-label">Location / Residence</span>
+                  <span class="detail-text">Letang, Morang, Nepal / IIT Bombay, Mumbai, India</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="quick-status-box">
+              <div class="pulse-indicator"></div>
+              <span>Currently completing M.Tech Thesis &bull; Ready for deployment</span>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-card" data-reveal="right">
+            <h3 class="contact-card-title"><i class="fa-regular fa-paper-plane"></i> Send a Direct Message</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" placeholder="Dr. / Eng. Jane Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject / Inquiry Topic <span class="required">*</span></label>
+                <input type="text" id="subject" name="subject" placeholder="Robotics Design Role / Collaboration Opportunity" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Hello Niraj, we were impressed by your EV charging thesis at IIT Bombay..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                <span class="btn-text">Transmit Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-symbol">&lt;NN /&gt;</span>
+          <span class="brand-name">NIRAJ NIRAULA</span>
+        </a>
+        <p class="footer-tagline">Mechanical Design Engineer &bull; Robotics &amp; Mechanism Design &bull; M.Tech IIT Bombay</p>
+      </div>
+
+      <div class="footer-nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#flagship">Thesis</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; <span id="current-year">2026</span> Niraj Niraula. All Rights Reserved. Engineered for Precision.</p>
+        <div class="footer-actions">
+          <a href="#hero" class="back-to-top-btn" aria-label="Back to top of page">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Full-Resolution Image Lightbox Modal -->
+  <div id="image-lightbox" class="lightbox-modal" aria-hidden="true" role="dialog" aria-label="Image Preview">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close preview">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Full resolution engineering preview">
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
